@@ -28,6 +28,9 @@ public class ClientesResource {
         return "Ok";
     }
 
+
+
+    //chamada do post para salvar cliente
     @PostMapping
     public ResponseEntity save(@RequestBody ClienteSaveRequest request){
        Cliente cliente = request.toModel();
